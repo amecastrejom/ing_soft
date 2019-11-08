@@ -3,7 +3,7 @@
 * {
 	box-sizing: border-box;
 }
-..
+
 body {
 	background: #f6f5f7;
 	display: flex;
@@ -13,14 +13,17 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
+	max-height: 100%;
+	max-width: 100%;
+	min_width:360px;
 
 }
 
 h1 {
   color: #2e3838;
 	font-weight: bold;
-  font-size: 25px;
-	margin: 0;
+  font-size: 100px;
+	margin-bottom: 100px;
 
 }
 
@@ -43,7 +46,7 @@ span {
 
 a {
 	color: #333;
-	font-size: 14px;
+	font-size: 35px;
 	text-decoration: none;
 	margin: 15px 0;
 }
@@ -97,6 +100,8 @@ input {
 	padding: 12px 15px;
 	margin: 8px 0;
 	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .container {
@@ -106,7 +111,7 @@ input {
 			0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
-	width: 768px;
+	width: auto;
 	max-width: 100%;
 	min-height: 480px;
 }
@@ -116,14 +121,19 @@ input {
 	top: 0;
 	height: 100%;
 	transition: all 0.6s ease-in-out;
+	padding : 0px;
+}
+
+.sign_1{
+
 }
 
 .sign-in-container {
 	left: 0;
 	width: 100%;
 	z-index: 2;
-  max-width: 70%;
-  max-height: 2970px;
+  max-width: 1000%;
+  max-height: 100%;
 }
 
 .container.right-panel-active .sign-in-container {
@@ -201,7 +211,7 @@ input {
 	text-align: center;
 	top: 0;
 	height: 100%;
-	width: 50%;
+	width: 100%;
 	transform: translateX(0);
 	transition: transform 0.6s ease-in-out;
 }
@@ -271,12 +281,16 @@ footer a {
   border: 1px solid #008080;
   background-color: #008080;
   color: #FFFFFF;
-  font-size: 12px;
+  font-size: 35px;
+	width: fit-content;
+	height: fit-content;
   font-weight: normal;
-  padding: 12px 45px;
+  padding: 20px 40px;
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: transform 80ms ease-in;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .button_n:hover{
@@ -291,6 +305,7 @@ footer a {
   outline: none;
 }
 
+
 .materias{
   background: -webkit-linear-gradient(to left, #43C6AC, ##F8FFAE);
   background: linear-gradient(to left, #43C6AC, #F8FFAE);
@@ -301,7 +316,12 @@ footer a {
 }
 
 .ph{
-
+	width: 70%;
+	height: 5%;
   background-color:   #eee;
-  border-radius: 4px;
+  border-radius: 8px;
+	margin-bottom: 50px;
+	font-size: 40px;
+	max-width: 100%;
+	max-height: 100%;
 }

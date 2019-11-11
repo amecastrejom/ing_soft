@@ -673,9 +673,9 @@ a
 
 #menuToggle input
 {
-  display: ;
-  width: 40px;
-  height: 32px;
+  display: block;
+  width: 100px;
+  height: 60px;
   position: absolute;
   top: -7px;
   left: -5px;
@@ -756,19 +756,20 @@ a
 #menu
 {
   position: absolute;
-  width: 50px;
+  width: 200px;
+  height: 200px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
   top: 10px;
-  left: 40px;
+  left: 10px;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
 
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(-105%, 0);
 
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
@@ -776,9 +777,9 @@ a
 #menu li
 {
   top: inherit;
-  left: 100px;
-  padding: 5px;
-  font-size: 15px;
+  left: 600px;
+  padding: 25px 60px;
+  font-size: 30px;
 }
 
 /*

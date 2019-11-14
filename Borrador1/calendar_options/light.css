@@ -657,7 +657,8 @@ a
   position: relative;
   top: 7px;
   left: 8px;
-  background: -webkit-linear-gradient(to left, #43C6AC, ##F8FFAE);
+
+  background: -webkit-linear-gradient(to left, #43C6AC, #F8FFAE);
   background: linear-gradient(to left, #43C6AC, #F8FFAE);
   z-index: 1;
 
@@ -756,8 +757,8 @@ a
 #menu
 {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 400px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -793,4 +794,8 @@ a
 #cb{
   width: 100px;
   height: 15px;
+}
+
+#nb{
+  font-size: 1.5em;
 }

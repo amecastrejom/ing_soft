@@ -276,7 +276,7 @@ footer a {
   color: blue;
 
 }
-.button_n{
+#button_n{
   border-radius: 20px;
   border: 1px solid #008080;
   background-color: #008080;
@@ -293,15 +293,15 @@ footer a {
 	max-height: 100%;
 }
 
-.button_n:hover{
+#button_n:hover{
   background: #00AEAE
 }
 
-.button_n:active{
+#button_n:active{
   transform: scale(0.8);
 }
 
-.button_n:focus{
+#button_n:focus{
   outline: none;
 }
 
@@ -315,7 +315,7 @@ footer a {
   color: black;
 }
 
-.ph{
+#ph{
 	width: 70%;
 	height: 5%;
   background-color:   #eee;
@@ -326,7 +326,7 @@ footer a {
 	max-height: 100%;
 }
 
-.particular{
+#particular{
 	color: #2e3838;
 	font-weight: bold;
 	font-size: 100px;

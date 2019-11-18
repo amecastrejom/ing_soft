@@ -8,27 +8,8 @@ function validate(){
     document.getElementById("username").value = ""
     document.getElementById("password").value = ""
   }else{
-    window.location.replace("Pagina_principal.html")
+    window.location.replace("Home.html")
   }
 
 
 }
-
-var connection = new ActiveXObject("ADODB.Connection") ;
-
-var connectionstring="Data Source=<server>;Initial Catalog=<catalog>;User ID=<user>;Password=<password>;Provider=SQLOLEDB";
-
-connection.Open(connectionstring);
-var rs = new ActiveXObject("ADODB.Recordset");
-
-rs.Open("SELECT * FROM usuarios", connection);
-rs.MoveFirst
-while(!rs.eof)
-{
-  alert(rs.fields(1));
-   //document.write(rs.fields(1));
-   rs.movenext;
-}
-
-rs.close;
-connection.close;

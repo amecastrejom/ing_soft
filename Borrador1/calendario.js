@@ -25,4 +25,5 @@ function change_week(){
 
 function change_month(){
   calendar.monthRangeSettings.headerStyle = p.MainHeaderStyle.Title;
+calendar.currentView= p.CalendarView.SingleMonth;
 }

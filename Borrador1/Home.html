@@ -56,14 +56,11 @@
         <div class="view">
           <div class="viewHeader">
             <div class="title">
-              Manage Tasks
+              TAREAS
             </div>
             <div class="functions">
               <div class="button active">
-                Add New Task
-              </div>
-              <div class="button">
-                Completed
+                Tarea nueva
               </div>
               <div class="button inverz">
                 <i class="fa fa-trash-o"></i>
@@ -80,21 +77,19 @@
                   <i class="fa fa-check-square-o"></i><span>Completar apuntes de circuitos</span>
                   <div class="info">
                     <div class="button green">
-                      En progreso
+                      Terminado
                     </div>
-                    <span>Se entrega el 20/12/2019</span>
                   </div>
                 </li>
                 <li onclick="$(this).toggleClass('checked')">
                   <!--
 onclick="$(this).toggleClass('newclass')"
                 -->
-                  <i onclick="$(this).toggleClass('fa fa-check-square-o'); $(boton).toggleClass('button green')"></i><span>Terminar ejercicio de circuitos</span>
+                  <i onclick="$(this).toggleClass('fa fa-check-square-o'); $(boton).toggleClass('button green'); myFunction()"></i><span>Terminar ejercicio de circuitos</span>
                   <div class="info">
-                    <div id=boton>
+                    <p id=boton>
                       En progreso
-                    </div>
-                    <span>Se entrega el 20/12/2019</span>
+                    </p>
                   </div>
                 </li>
                 <li>
@@ -118,4 +113,9 @@ onclick="$(this).toggleClass('newclass')"
         </div>
       </div>
   </body>
+  <script>
+function myFunction() {
+  document.getElementById("boton").textContent= "Terminado";
+}
+</script>
   </html>

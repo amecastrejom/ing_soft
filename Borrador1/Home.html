@@ -80,16 +80,19 @@
                   <i class="fa fa-check-square-o"></i><span>Completar apuntes de circuitos</span>
                   <div class="info">
                     <div class="button green">
-                      En progres0
+                      En progreso
                     </div>
                     <span>Se entrega el 20/12/2019</span>
                   </div>
                 </li>
-                <li>
-                  <i class="fa fa-square-o"></i><span>Terminar ejercicio de circuitos</span>
+                <li onclick="$(this).toggleClass('checked')">
+                  <!--
+onclick="$(this).toggleClass('newclass')"
+                -->
+                  <i onclick="$(this).toggleClass('fa fa-check-square-o'); $(boton).toggleClass('button green')"></i><span>Terminar ejercicio de circuitos</span>
                   <div class="info">
-                    <div class="button">
-                      Pending
+                    <div id=boton>
+                      En progreso
                     </div>
                     <span>Se entrega el 20/12/2019</span>
                   </div>

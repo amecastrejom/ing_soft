@@ -348,7 +348,7 @@
 .mfp-planner.light .mfp-item
 {
     border:none;
-    background-color: #bdf07c;
+    background-color: #43C6AC;
     color: #404040;
 }
 .mfp-planner.light .mfp-item-vertical-detail .mfp-time-indicator-wrapper,
@@ -619,6 +619,14 @@
 {
     height:40px;
 }
+.mfp-item {
+    display: flex;
+    height: 100%;
+    border: 1px solid;
+    font-weight: bold;
+    background-color: #fff;
+    font-size: 18px !important;
+}
 .mfp-timetable-view.light .mfp-header .mfp-title-table tr.mfp-item-row,
 .mfp-timetable-view.light .mfp-header .mfp-title-table tr.mfp-empty-row
 {
@@ -680,6 +688,73 @@
     background-color: #fff;
     color: #747474;
 }
+.mfp-item .mfp-subject
+{
+  text-align: center;
+  align-self: center;
+}
+.indicator-drag
+{
+  background-color: #f6cd61 !important;
+  color: #fff;
+}
+.mfp-planner:not(.mfp-timetable-view):not(.mfp-horizontal-timetable-view) .indicator-drag::after
+{
+  content: "\0021C4";
+  font-size: xx-large;
+}
+.indicator-resize
+{
+  background-color: #adcbe3 !important;
+  color: #fff;
+}
+.mfp-planner:not(.mfp-timetable-view):not(.mfp-horizontal-timetable-view) .indicator-resize::after
+{
+  content: "\0021D4";
+  font-size: xx-large;
+}
+.modal
+{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: 999;
+}
+.inplace
+{
+  position: absolute;
+  top:33%;
+  left:33%;
+  right:33%;
+  bottom:33%;
+  background:rgba(246, 190, 132, 0.5);
+  border: 2px double #E2806C;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+}
+.inplace > textarea
+{
+  width: 100%;
+  height: 60%;
+}
+.inplace > button
+{
+  margin: 5px;
+  padding: 10px;
+  width: 100px;
+}
+.inplace-create
+{
+  position: absolute;
+  z-index:999;
+  padding: 0;
+  border: none;
+  background-color: #fff2cc;
+}
+
 .mfp-week-view.light .mfp-content .mfp-wrap .mfp-bg-row .mfp-bg-cell
 {
      border-right: 1px solid #d4d4d4;

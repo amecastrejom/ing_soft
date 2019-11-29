@@ -44,9 +44,6 @@
     </nav>
 
       <div class="pageHeader">
-        <div class="title">
-          Dashboard
-        </div>
         <div class="userPanel">
           <i class="fa fa-chevron-down"></i><span class="username">John Doe </span><img , height="45" width="45" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/73.jpg" />
         </div>
@@ -55,17 +52,7 @@
 
         <div class="view">
           <div class="viewHeader">
-            <div class="title">
-              TAREAS
-            </div>
-            <div class="functions">
-              <div class="button active">
-                Tarea nueva
-              </div>
-              <div class="button inverz">
-                <i class="fa fa-trash-o"></i>
-              </div>
-            </div>
+            <img src="img/calendario.png" >
           </div>
           <div class="content">
             <div class="list">
@@ -74,26 +61,25 @@
               </div>
               <ul>
                 <li class="checked">
-                  <i class="fa fa-check-square-o"></i><span>Completar apuntes de circuitos</span>
-                  <div class="info">
-                    <div class="button green">
-                      Terminado
-                    </div>
-                  </div>
+                  <i class="fa fa-check-square-o"></i>
+                  <span class="hora">10:00</span>
+                  <span>&emsp;</span>
+                  <span>Entregar tarea de sección 11 de libro de circuitos</span>
                 </li>
                 <li onclick="$(this).toggleClass('checked')">
                   <!--
 onclick="$(this).toggleClass('newclass')"
                 -->
-                  <i onclick="$(this).toggleClass('fa fa-check-square-o'); $(boton).toggleClass('button green'); myFunction()"></i><span>Terminar ejercicio de circuitos</span>
-                  <div class="info">
-                    <p id=boton>
-                      En progreso
-                    </p>
-                  </div>
+                  <i onclick="$(this).toggleClass('fa fa-check-square-o'); $(boton).toggleClass('button green'); myFunction()"></i>
+                  <span class="hora">11:00</span>
+                  <span>&emsp;</span>
+                  <span>Terminar de leer capítulo 13</span>
                 </li>
                 <li>
-                  <i class="fa fa-square-o"></i><span>Encontrar ejemplos de la tarea</span>
+                  <i class="fa fa-square-o"></i>
+                  <span class="hora">13:00</span>
+                  <span>&emsp;</span>
+                  <span>Presentación de aplicaciones</span>
                   <div class="info"></div>
                 </li>
               </ul>
@@ -104,7 +90,10 @@ onclick="$(this).toggleClass('newclass')"
               </div>
               <ul>
                 <li>
-                  <i class="fa fa-square-o"></i><span>Presentación de aplicaciones</span>
+                  <i class="fa fa-square-o"></i>
+                  <span class="hora">8:00</span>
+                  <span>&emsp;</span>
+                  <span>Exámen</span>
                   <div class="info"></div>
                 </li>
               </ul>

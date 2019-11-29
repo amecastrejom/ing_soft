@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:300|Lato:300,400,600,700|Roboto+Condensed:300,700|Open+Sans+Condensed:300,600|Open+Sans:400,300,600,700|Maven+Pro:400,700);
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 html {
-  background-image: url(http://www.ultraimg.com/images/2UeGfhZ.jpg);
+
 }
 
 body {
@@ -19,7 +19,6 @@ body {
   left: 10%;
   top: 10%;
   z-index: auto;
-  background-color: rgba(255, 255, 255, 0.7);
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
 
@@ -143,7 +142,7 @@ body {
 }
 .main .view {
   position: relative;
-  margin-left: 200px;
+  margin-left: 10px;
 }
 .main .view .viewHeader {
   width: 100%;
@@ -154,6 +153,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-bottom: 1px solid #E0E0E0;
+  padding-left: 100px;
 }
 .main .view .viewHeader .title {
   float: left;
@@ -189,6 +189,7 @@ body {
   width: 10px;
   color: #AAA;
   font-size: 1.3em;
+
   padding-left: 10px;
   padding-right: 16px;
 }
@@ -199,17 +200,21 @@ body {
   right: 0px;
   bottom: 0px;
   padding: 10px;
+  padding-top: 200px;
+
 }
 .main .view .content .list .title {
   width: 100%;
   padding: 10px;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 35px;
   color: #54b9cd;
 }
 .main .view .content .list ul {
   width: 100%;
   padding-left: 10px;
+  font-size: 20px;
   color: #777;
 }
 .main .view .content .list ul li {
@@ -264,4 +269,8 @@ body {
 
 .clear {
   clear: both;
+}
+.hora {
+  font-weight:900;
+  color: #54b9cd;
 }

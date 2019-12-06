@@ -1016,9 +1016,21 @@ a
   width: 160px !important;
   margin-left: 60px;
 }
-.contacts, .contacts span{
+.contacts, .contacts span, .mfp-location{
   visibility: collapse !important;
+  height: 0px;
 }
 .details textarea{
-  width: 400px !important;
+  width: 600px !important;
+}
+
+.mfp-popup .mfp-popup-content .mfp-buttons-row a.mfp-button{
+  font-size: 32px !important;
+  width: 180px !important;
+  padding-top: 15px !important;
+  height: 50px !important;
+}
+
+a.mpf-button:nth-child(3){
+  margin-left: 20px !important;
 }

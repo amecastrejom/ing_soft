@@ -1016,3 +1016,9 @@ a
   width: 160px !important;
   margin-left: 60px;
 }
+.contacts, .contacts span{
+  visibility: collapse !important;
+}
+.details textarea{
+  width: 400px !important;
+}
